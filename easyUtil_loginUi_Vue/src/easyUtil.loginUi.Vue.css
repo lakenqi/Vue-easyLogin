@@ -1,0 +1,124 @@
+/* easyUtil-loginUi (c) Copyright 2018 qy. All Rights Reserved. */
+@import url(icon/style.css);
+[v-cloak] {
+  display: none; }
+
+input::-ms-clear {
+  display: none; }
+
+input::-ms-reveal {
+  display: none; }
+
+.easyUtil-login-body {
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 0.5em 1.5em;
+  min-width: 20vw;
+  box-sizing: border-box;
+  margin: auto;
+  width: 22em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 1em; }
+  .easyUtil-login-body hr {
+    border: 1px solid rgba(0, 0, 0, 0.3); }
+.easyUtil-login-title {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.5em;
+  margin-bottom: 0.5em; }
+.easyUtil-login-content {
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  margin: 1.4em 0 1.2em;
+  border-radius: 5px;
+  background-color: #fff;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  position: relative; }
+  .easyUtil-login-content input {
+    border: none;
+    box-sizing: border-box;
+    padding: 0 1vw 0 .5vw;
+    align-items: stretch;
+    flex-grow: 1;
+    height: 40px; }
+  .easyUtil-login-content:hover {
+    border: 2px solid #54C9FF; }
+.easyUtil-login-content:nth-of-type(4) {
+  width: 62%; }
+  .easyUtil-login-content:nth-of-type(4) input {
+    width: 75%; }
+.easyUtil-login-icon {
+  color: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  width: 2.5em;
+  font-size: 1em;
+  text-align: center;
+  line-height: 2.5;
+  border-right: 1px solid; }
+.easyUtil-login-errorCode {
+  color: #bc0000;
+  position: absolute;
+  top: 110%;
+  right: 1em;
+  font-size: 0.8em; }
+.easyUtil-login-error {
+  border: 2px solid #bc0000; }
+.easyUtil-login-selected {
+  border: 2px solid #54C9FF; }
+  .easyUtil-login-selected .easyUtil-login-icon {
+    color: #FFFFFF;
+    background-color: #54C9FF; }
+.easyUtil-login-delete {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: grey;
+  opacity: .3;
+  cursor: pointer;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0.6em auto;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: bolder;
+  position: absolute;
+  right: 5px; }
+  .easyUtil-login-delete:hover {
+    opacity: .8;
+    color: #FFFFFF; }
+.easyUtil-login-codeImg {
+  width: 6.5em;
+  position: absolute;
+  height: 100%;
+  right: -7.5em;
+  border: 1px solid;
+  cursor: pointer; }
+.easyUtil-login-remember {
+  text-align: left;
+  font-size: 0.8em;
+  margin-top: -0.5em; }
+  .easyUtil-login-remember label,
+  .easyUtil-login-remember input {
+    cursor: pointer; }
+.easyUtil-login-btn {
+  background-color: gainsboro !important;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 6vh;
+  line-height: 6vh;
+  width: 100%;
+  margin: 1em auto; }
+  .easyUtil-login-btn-abled {
+    background-color: rgba(255, 187, 0, 0.8) !important; }
+    .easyUtil-login-btn-abled:hover {
+      background-color: #ffbb00 !important; }
+.easyUtil-login-word {
+  position: absolute;
+  top: -22px;
+  left: 3px;
+  font-size: 0.8em; }
+
+/*# sourceMappingURL=easyUtil.loginUi.Vue.css.map */

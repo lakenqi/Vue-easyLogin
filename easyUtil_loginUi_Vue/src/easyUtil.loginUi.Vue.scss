@@ -1,0 +1,166 @@
+/* easyUtil-loginUi (c) Copyright 2018 qy. All Rights Reserved. */
+//params
+$border:1px solid rgba(0, 0, 0, .5);
+$basicSize:1em;
+$btnAble:rgba(255, 187, 0, .8);
+$btnUnable:gainsboro;
+$btnHover:#ffbb00;
+$error:#bc0000;
+$selected:#54C9FF;
+
+
+@charset "utf-8";
+@import "icon/style.css";
+[v-cloak] {
+    display: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+input::-ms-reveal {
+    display: none;
+}
+
+#easyUtil-login-part {}
+
+.easyUtil-login {
+    &-body {
+        text-align: center;
+        border: $border;
+        border-radius: 5px;
+        padding: $basicSize*.5 $basicSize*1.5;
+        min-width: 20vw;
+        box-sizing: border-box;
+        margin: auto;
+        width: $basicSize*22;
+        position: absolute;
+        left: 0;
+        right: 0;
+        font: {
+            size: $basicSize;
+        }
+        & hr {
+            border: 1px solid rgba(0, 0, 0, .3)
+        }
+    }
+    &-title {
+        text-align: center;
+        font-weight: bolder;
+        font-size: $basicSize*1.5;
+        margin-bottom: $basicSize*.5;
+    }
+    &-content {
+        border: 2px solid rgba(0, 0, 0, 0.4);
+        margin: $basicSize*1.4 0 $basicSize*1.2;
+        border-radius: 5px;
+        background-color: #fff;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        input {
+            border: none;
+            box-sizing: border-box;
+            padding: 0 1vw 0 .5vw;
+            align-items: stretch;
+            flex-grow: 1;
+            height: 40px;
+        }
+        &:hover {
+            border: 2px solid #54C9FF;
+        }
+    }
+    &-content:nth-of-type(4) {
+        width: 62%;
+        input {
+            width: 75%;
+        }
+    }
+    &-icon {
+        color: rgba(0, 0, 0, .4);
+        display: inline-block;
+        width: $basicSize*2.5;
+        font-size: $basicSize;
+        text-align: center;
+        line-height: 2.5;
+        border-right: 1px solid;
+    }
+    &-errorCode {
+        color: $error;
+        position: absolute;
+        top: 110%;
+        right: $basicSize;
+        font: {
+            size: $basicSize*.8;
+        }
+    }
+    &-error {
+        border: 2px solid $error;
+    }
+    &-selected {
+        border: 2px solid $selected;
+        .easyUtil-login-icon {
+            color: #FFFFFF;
+            background-color: $selected;
+        }
+    }
+    &-delete {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: grey;
+        opacity: .3;
+        cursor: pointer;
+        line-height: 1.2;
+        text-align: center;
+        margin: $basicSize*.6 auto;
+        color: rgba(0, 0, 0, .4);
+        font-weight: bolder;
+        position: absolute;
+        right: 5px;
+        &:hover {
+            opacity: .8;
+            color: #FFFFFF;
+        }
+    }
+    &-codeImg {
+        width: $basicSize*6.5;
+        position: absolute;
+        height: 100%;
+        right: $basicSize*-7.5;
+        border: 1px solid;
+        cursor: pointer;
+    }
+    &-remember {
+        text-align: left;
+        font-size: $basicSize*.8;
+        margin-top: $basicSize*-.5;
+        label,
+        input {
+            cursor: pointer;
+        }
+    }
+    &-btn {
+        background-color: $btnUnable !important;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 6vh;
+        line-height: 6vh;
+        width: 100%;
+        margin: $basicSize auto;
+        &-abled {
+            background-color: $btnAble !important;
+            &:hover {
+                background-color: $btnHover !important;
+            }
+        }
+    }
+    &-word {
+        position: absolute;
+        top: -22px;
+        left: 3px;
+        font-size: $basicSize*.8;
+    }
+}

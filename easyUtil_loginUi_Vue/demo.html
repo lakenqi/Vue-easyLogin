@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="src/easyUtil.loginUi.Vue.css" />
+	</head>
+	<body>
+		<div id="app" v-cloak>
+			<easy-login 
+				:word=true 
+				:icon=true 
+				:has-code = true
+				:error-info="errors" 
+				:btn-text="btnText" 
+				:code-flag="codeFlag" 
+				:img-path="imgPath" 
+				@check-code="check" 
+				@submit="toSubmit" 
+				@get-img="getImg">
+			</easy-login>
+		</div>
+		<script type="text/javascript" src="vue.min.js"></script>
+		<script type="text/javascript" src="src/easyUtil.loginUi.Vue.1.0.min.js"></script>
+		<script>
+			var form = new Vue({
+				el: "#app",
+				data: {
+					errors: {
+						user: "用户名绝对不能为空",
+						pwd: "密码不能绝对为空",
+						code: "验证码绝对不能为空"
+					},
+					codeFlag: !1,
+					btnText: "登录",
+					imgPath: ""
+				},
+				mounted: function() {
+					this.$nextTick(function() {});
+				},
+				methods: {
+					check: function(t) {
+						var e = this;
+						setTimeout(function() {
+							e.codeFlag = ("1234" === t);
+						}, 100);
+					},
+					toSubmit: function(t) {
+						"1234" == t.pwd ? alert("ok") : alert("no!");
+					},
+					getImg: function() {
+						this.imgPath = "src/loading.png";
+					}
+				}
+			});
+		</script>
+	</body>
+
+</html>
