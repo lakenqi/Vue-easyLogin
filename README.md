@@ -17,26 +17,29 @@ Vue登录页面组件
 以组件引入方式直接说明，其中带有默认值的均为可选项，其他为必填项（以下代码非正常代码，仅供说明使用）：  
 ```
 <easy-login ：“组件名称”  
-    :title="登录框名称，默认“用户登录”"  
-    :word=true "是否使用文字提示模式，默认true" 
-    :icon=true "是否使用图标提示模式，默认false" 
+	:title="登录框名称，默认“用户登录”"  
+	:word=true "是否使用文字提示模式，默认true" 
+	:icon=true "是否使用图标提示模式，默认false" 
 	:has-code = true "是否开启验证码模式，默认true"
 	:remember = "记住用户名名称设置，默认为“记住用户名”"
-	:placeholders = "输入框提示文字，Objec类型:默认为 {
-						user: '请输入用户名',
-						pwd: '请输入密码',
-						code: '请输入验证码'
-					}"	
-	:icons = "提示图标的类型，iconFont,Object类型:默认为{
-					user: 'iconFont icon-user',
-					pwd: 'iconFont icon-pwd',
-					code: 'iconFont icon-code'
-				}"		
-	:error-info="错误提示内容，Object类型：默认为 {
-						user: "用户名不能为空",
-						pwd: "密码不能为空",
-						code: "验证码不能为空",
-					}," 
+	:placeholders = "输入框提示文字，Objec类型:
+		默认为 {
+			user: '请输入用户名',
+			pwd: '请输入密码',
+			code: '请输入验证码'
+			}"	
+	:icons = "提示图标的类型，iconFont,Object类型:
+		默认为{
+			user: 'iconFont icon-user',
+			pwd: 'iconFont icon-pwd',
+			code: 'iconFont icon-code'
+		}"		
+	:error-info="错误提示内容，Object类型：
+		默认为 {
+			user: "用户名不能为空",
+			pwd: "密码不能为空",
+			code: "验证码不能为空",
+		}," 
 	:btn-text="登录按钮的名称，默认“登录”" 
 	:imgTitle="切换验证码的提示字，默认“换一张图片”"
 	:code-flag="验证码是否正确的标识，需自行设置即可 " 
@@ -46,6 +49,6 @@ Vue登录页面组件
 	@submit="提交表单的方法，需自行设置即可">
 </easy-login>
 ```
-#### 如有任何问题，欢迎留言
+#### 如有任何问题，欢迎留言，欢迎大家一起完善和丰富
 
 
