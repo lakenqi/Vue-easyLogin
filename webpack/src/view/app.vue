@@ -47,7 +47,7 @@
 				"1234" == t.pwd ? alert("ok") : alert("no!");
 			},
 			getImg() {
-				this.imgPath = "../../src/img/loading.png";
+				this.imgPath = require("../../src/img/loading.png");
 			}
 		}
 	}
